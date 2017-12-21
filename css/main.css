@@ -6,7 +6,7 @@
 }
 
 h1 {
-    color: #00d9ff;;
+    color: #00d9ff;
     font-size: 80px;
     margin: 0 auto;
 }
@@ -34,7 +34,7 @@ body {
 
 table {
     background-size: contain;
-    background-color: #e1ffe1;
+    background-color: white;
     font-size: 40px;
     margin: 0 auto;
     border-collapse: collapse;
@@ -44,7 +44,6 @@ table {
 td {
     border: 13px solid black;
     box-shadow: inset 7px 7px 20px 0px rgba(50, 50, 50, 0.9);
-    text-align: center;
     padding: 10px 10px 0px;
     width: 120px;
     height: 100px;
