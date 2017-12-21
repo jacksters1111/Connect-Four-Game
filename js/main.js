@@ -9,6 +9,7 @@ var board, turn, win;
 var msgEl = document.getElementById('message');
 
 document.querySelector('table').addEventListener('click', function(evt) {
+    if (win) return;
     var colIdx = parseInt(evt.target.getAttribute('data-col'));
     var column = board[colIdx];
     if (!column.includes(null)) return;
@@ -19,7 +20,6 @@ document.querySelector('table').addEventListener('click', function(evt) {
 });
 
 document.querySelector('button').addEventListener('click', function(evt) {
-    console.log('hello!!!!!!!!')
     initialize();
     render();
 });
@@ -49,15 +49,14 @@ function render() {
         msgEl.innerHTML = `Congrats, Player ${playerColors[win].toUpperCase()} Wins!`;
     } else {
         msgEl.innerHTML = `It's Player ${playerColors[turn].toUpperCase()}'s Turn!`;
-
-    } 
+    }
 }
 
 function getWinner() {
-     var winner = null;
+    var winner = null;
     for (var col = 0; col < board.length; col++) {
         winner = getColumnWinner(col);
-    if (winner) break;
+        if (winner) break;
     }
     return winner;
 }
