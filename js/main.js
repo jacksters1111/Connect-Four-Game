@@ -99,5 +99,6 @@ function checkDiag(colIdx, offset) {
     }
     return null;
 }
+
 initialize();
 render();
