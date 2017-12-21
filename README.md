@@ -11,7 +11,3 @@ The technologies used to create this game were HTML, CSS, and Javascript.
 <h1>Game Link</h1>
 
 https://jacksters1111.github.io/Connect-Four-Game/
-
-<h1>Unsolved problems</h1>
-
-The only problem I have not solved is the winning logic for this game.
