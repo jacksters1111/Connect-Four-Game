@@ -10,7 +10,7 @@ The technologies used to create this game were HTML, CSS, and Javascript.
 
 <h1>Getting Started</h1>
 
-https://jacksters1111.github.io/Connect-Four-Game/
+https://github.com/jacksters1111/Connect-Four-Game
 
 <h1>Next Steps</h1>
 
