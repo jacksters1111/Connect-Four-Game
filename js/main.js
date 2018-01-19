@@ -42,14 +42,14 @@ function render() {
     board.forEach(function(colArr, idx) {
         var cells = document.querySelectorAll(`[data-col="${idx}"]`)
         for( var i = 0; i < cells.length; i++) {
-            cells[5 - i].style.backgroundColor = playerColors[board[idx][i]]
+            cells[5 - i].style.backgroundColor = playerColors[board[idx][i]];
+        }
+        if (win) {
+        msgEl.innerHTML = `Congrats, Player ${playerColors[win].toUpperCase()} Wins!`;
+        } else {
+        msgEl.innerHTML = `It's Player ${playerColors[turn].toUpperCase()}'s Turn!`;
         }
     });
-    if (win) {
-        msgEl.innerHTML = `Congrats, Player ${playerColors[win].toUpperCase()} Wins!`;
-    } else {
-        msgEl.innerHTML = `It's Player ${playerColors[turn].toUpperCase()}'s Turn!`;
-    }
 }
 
 function getWinner() {
