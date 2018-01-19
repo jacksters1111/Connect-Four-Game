@@ -8,6 +8,10 @@ If your looking for a simple strategy game that can be played with just about an
 
 The technologies used to create this game were HTML, CSS, and Javascript.
 
-<h1>Game Link</h1>
+<h1>Getting Started</h1>
 
 https://jacksters1111.github.io/Connect-Four-Game/
+
+<h1>Next Steps</h1>
+
+Features I have planned for this game is making noise when a player clicks on the table.

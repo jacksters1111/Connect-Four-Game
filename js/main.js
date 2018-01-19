@@ -48,8 +48,12 @@ function render() {
         msgEl.innerHTML = `Congrats, Player ${playerColors[win].toUpperCase()} Wins!`;
         } else {
         msgEl.innerHTML = `It's Player ${playerColors[turn].toUpperCase()}'s Turn!`;
+<<<<<<< HEAD
         }
     });
+=======
+    }
+>>>>>>> a6739f67b84977bbda652f8e7f82160d9e7444ce
 }
 
 function getWinner() {
