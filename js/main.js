@@ -93,7 +93,7 @@ function checkHoriz(colIdx) {
 function checkDiag(colIdx, offset) {
     if (colIdx > 3) return null;
     for (var row = 0; row < 7; row++) {
-        if ((offset === 1 && row > 2) || (offset === -1 && row < 3)) break;
+        if ((offset === 1 && row > 2) || (offset === -1 && row > 3)) break;
         if (Math.abs(board[colIdx][row] + board[colIdx + 1][row + offset] + board[colIdx + 2][row + offset * 2] + board[colIdx + 3][row + offset * 3]) === 4) return board[colIdx][row];
     }
     return null;
