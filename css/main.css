@@ -34,19 +34,25 @@ body {
 
 table {
     background-size: contain;
-    background-color: white;
+    background-color: black;
     font-size: 40px;
     margin: 0 auto;
-    border-collapse: collapse;
+    border-spacing: collapse; 
+    border-collapse: separate;
     cursor: pointer;
+    border-radius: 24px;   
 }
 
 td {
-    border: 13px solid black;
-    box-shadow: inset 7px 7px 20px 0px rgba(50, 50, 50, 0.9);
+    margin: 5px;
     padding: 10px 10px 0px;
     width: 90px;
     height: 85px;
+    border-radius: 50%; 
+    padding: 7px;
+    box-sizing: border-box;
+    box-shadow: inset 7px 7px 20px 0px rgba(50, 50, 50, 0.9);
+    
 }
 
     td:hover {
